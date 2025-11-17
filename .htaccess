@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirigir todo a index.php, excepto archivos dentro de /public
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ index.php [L]
